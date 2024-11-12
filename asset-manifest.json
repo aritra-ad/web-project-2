@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/web-project-2/static/css/main.51c77e0e.chunk.css",
+    "main.js": "/web-project-2/static/js/main.67dac224.chunk.js",
+    "main.js.map": "/web-project-2/static/js/main.67dac224.chunk.js.map",
+    "runtime~main.js": "/web-project-2/static/js/runtime~main.97cf0b1a.js",
+    "runtime~main.js.map": "/web-project-2/static/js/runtime~main.97cf0b1a.js.map",
+    "static/css/2.9c2457ae.chunk.css": "/web-project-2/static/css/2.9c2457ae.chunk.css",
+    "static/js/2.0bf3a033.chunk.js": "/web-project-2/static/js/2.0bf3a033.chunk.js",
+    "static/js/2.0bf3a033.chunk.js.map": "/web-project-2/static/js/2.0bf3a033.chunk.js.map",
+    "index.html": "/web-project-2/index.html",
+    "precache-manifest.b22f56005b189957d0d926d4cbff5625.js": "/web-project-2/precache-manifest.b22f56005b189957d0d926d4cbff5625.js",
+    "service-worker.js": "/web-project-2/service-worker.js",
+    "static/css/2.9c2457ae.chunk.css.map": "/web-project-2/static/css/2.9c2457ae.chunk.css.map",
+    "static/css/main.51c77e0e.chunk.css.map": "/web-project-2/static/css/main.51c77e0e.chunk.css.map",
+    "static/media/EventList.css": "/web-project-2/static/media/Upcming_bg.c93d6603.jpg",
+    "static/media/banner_img.jpg": "/web-project-2/static/media/banner_img.54d6dc31.jpg",
+    "static/media/CarousalInfo.css": "/web-project-2/static/media/carousal_bg.df4f394f.jpg",
+    "static/media/ConcertTours.css": "/web-project-2/static/media/concert_bg.3ded0375.jpg",
+    "static/media/Contact.css": "/web-project-2/static/media/contact_bg.41427f1e.jpg",
+    "static/media/all.min.css": "/web-project-2/static/media/fa-v4compatibility.7c428138.woff2",
+    "static/media/logo.png": "/web-project-2/static/media/logo.c21e5992.png"
+  }
+}
