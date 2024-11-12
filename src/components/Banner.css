@@ -1,0 +1,156 @@
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Prevent overflow from animations */
+}
+
+.hero-image {
+  position: relative; /* Keep the image in position for overlay */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease, filter 1s ease; /* 1 second for filter transition */
+}
+
+.hero-image:hover img {
+  transform: scale(1.05); /* Zoom effect on hover */
+  filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  /* Remove opacity changes to keep it always visible */
+}
+
+.dj-name, .dj-label, .dj-subtitle {
+  transform: translateY(0); /* Keep texts in position */
+  opacity: 1; /* Always visible */
+  
+}
+
+.dj-name {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  animation: fadeInUp 0.8s forwards; /* Animation for entrance */
+  animation-delay: 0.10s; /* Delay for staggered effect */
+  color: #000;
+}
+
+.dj-label {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-top: -10px;
+  animation: fadeIn 1.5s forwards; /* Slowed down animation */
+  animation-delay: 1s; /* Increased delay for staggered effect */
+  color: #000;
+}
+
+.dj-subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-top: -10px;
+  font-style: italic;
+ 
+  animation: fadeIn 1.5s forwards; /* Slowed down animation */
+  animation-delay: 1s; /* Increased delay for staggered effect */
+  color: #000;
+}
+
+/* Discography Section Styling */
+.discography-section {
+  text-align: center;
+  padding: 50px 20px;
+  opacity: 0; /* Start hidden for animation */
+  transform: translateY(20px);
+  animation: fadeIn 1.5s forwards; /* Slowed down animation */
+  animation-delay: 1s; /* Increased delay for staggered effect */
+}
+
+
+
+.section-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+  color: #b56666;
+  margin-bottom: 20px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #b56666;
+  margin: 10px auto;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1280px){
+
+  .dj-name {
+
+    color: #000;
+}
+
+.dj-label, .dj-subtitle {
+
+    color: #000;
+}
+
+}
+
+@media (max-width: 768px) {
+  .dj-name {
+      font-size: 2rem;
+      color: #000;
+  }
+
+  .dj-label, .dj-subtitle {
+      font-size: 1rem;
+      color: #000;
+  }
+
+  .section-title {
+      font-size: 1.5rem;
+  }
+
+  .section-description {
+      font-size: 0.9rem;
+  }
+}

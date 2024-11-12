@@ -1,0 +1,141 @@
+/* Container styling for the entire carousel */
+.carousel-container {
+  background-image: url('../assets/carousal_bg.jpg'); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Slide content */
+.carousel-content {
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Heading styling */
+.carousel-content h2 {
+  font-size: 32px; /* Increased font size */
+  font-weight: 700; /* Bolder font */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added text shadow */
+}
+
+/* Paragraph styling */
+.carousel-content p {
+  font-size: 20px; /* Increased font size */
+  line-height: 1.6; /* Better line spacing */
+}
+
+.carousel-button {
+  position: absolute;
+  color: black;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 50%;
+  z-index: 20;
+
+}
+
+.carousel-button.left {
+  left: 30px; /* Position the left button */
+}
+
+.carousel-button.right {
+  right: 30px; /* Position the right button */
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px){
+
+  .carousel-button.right {
+    display: none;
+  }
+
+.carousel-button.left {
+  display: none;
+  }
+
+  .carousel-content p {
+    font-size: 20px;
+    padding: 0 22px 0 22px;
+  }
+
+  .carousel-content h2 {
+    font-size: 28px;
+
+  }
+}
+
+@media only screen and (max-width: 820px){
+
+  .carousel-button.right {
+    display: none;
+  }
+
+.carousel-button.left {
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-content h2 {
+    font-size: 26px; /* Adjusted for smaller screens */
+  }
+  .carousel-content p {
+    font-size: 18px; /* Adjusted for smaller screens */
+  }
+
+  .carousel-button {
+    padding: 10px; /* Reduced padding on smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  .carousel-button.right {
+    display: none;
+  }
+
+.carousel-button.left {
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 767px){
+
+  .carousel-content h2 {
+    font-size: 18px;
+  }
+
+  .carousel-button {
+    font-size: 10px;
+  }
+
+  .carousel-content p {
+    font-size: 16px;
+    padding: 0 24px 0 25px;
+  }
+
+  .carousel-button.right {
+    display: none;
+  }
+
+.carousel-button.left {
+  display: none;
+  }
+
+}
+
+

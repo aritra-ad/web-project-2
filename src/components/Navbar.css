@@ -1,0 +1,183 @@
+/* General navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3f3f3; /* Light background */
+  height: 7vh;
+}
+
+.logo {
+  /* Add styles for logo here if needed */
+  font-size: 24px; /* Example logo size */
+  font-weight: bold;
+}
+
+.menu-items a {
+  color: black; /* Dark text color */
+  margin-right: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu-items a:hover {
+  color: #7a7a7a; /* Slight hover effect */
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+/* Side navigation for mobile screens */
+.sidenav {
+  height: 100%;
+  width: 0; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f3f3f3; /* Match the background color */
+  overflow-x: hidden;
+  transition: width 0.5s ease, opacity 0.5s ease; /* Add opacity transition */
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000; /* Ensure it's on top */
+  opacity: 0; /* Start as invisible */
+}
+
+.sidenav.open {
+  width: 250px; /* Width when open */
+  opacity: 1; /* Fully visible when open */
+}
+
+/* Slide-in effect for the side navigation links */
+.sidenav a {
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  transition: transform 0.3s ease, color 0.3s; /* Add transform transition */
+  font-weight: 600;
+  transform: translateX(-20px); /* Start from the left */
+  opacity: 0; /* Start as invisible */
+}
+
+/* Apply animation when the side navigation is open */
+.sidenav.open a {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Slide in */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  padding: 10px;
+  color: black; /* Close button color */
+  cursor: pointer;
+}
+
+
+/* Media queries for responsiveness */
+
+
+
+@media only screen and (max-width: 1366px){
+  .hamburger-menu {
+    display: none; /* Hide hamburger menu */
+  }
+  .menu-items {
+    display: flex; /* Show menu items */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Ensure space between logo and menu */
+  }
+
+}
+
+@media only screen and (max-width: 1280px){
+  .hamburger-menu {
+    display: none; /* Hide hamburger menu */
+  }
+  .menu-items {
+    display: flex; /* Show menu items */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Ensure space between logo and menu */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger-menu {
+    display: flex; /* Hide hamburger menu */
+  }
+  .menu-items {
+    display: none; /* Show menu items */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Ensure space between logo and menu */
+  }
+
+}
+
+@media only screen and (max-width: 820px){
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu */
+  }
+  .menu-items {
+    display: none; /* Hide the regular menu items */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Ensure space between logo and menu */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu */
+  }
+  .menu-items {
+    display: none; /* Hide the regular menu items */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Ensure space between logo and menu */
+  }
+
+}
+
+@media (max-width: 767px) {
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu */
+  }
+  .menu-items {
+    display: none; /* Hide the regular menu items */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Ensure space between logo and menu */
+  }
+
+  .sidenav a {
+    font-size: 16px; /* Increase font size for easier tapping */
+  }
+}

@@ -1,0 +1,181 @@
+/* Header and Subtitle */
+.composition-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center; /* Center the text horizontally */
+}
+
+.composition-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    margin: 10px auto;
+    height: 3px;
+    background-color: #f05454; /* A soft accent color */
+}
+
+.composition-subtitle {
+   
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-align: center; /* Center the text horizontally */
+}
+
+
+/* Custom Card Styles */
+.custom-card {
+    border: none;
+    margin-bottom: 30px;
+   
+    border-radius: 12px;
+    box-shadow: 10px 8px 20px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    height: 35vh;
+}
+
+.custom-card:hover {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.embed-responsive-item {
+    width: 100%;
+    height: 35vh;
+    border-radius: 12px 0 0 12px;
+}
+
+.card-body {
+    padding: 20px;
+    color: #333;
+}
+
+.card-date {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #111;
+}
+
+.card-text {
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.itunes-btn {
+    background-color: #f05454;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.itunes-btn:hover {
+    background-color: #d94343;
+    transform: translateY(-2px);
+}
+
+.interaction-icons {
+    display: flex;
+    align-items: center;
+}
+
+.interaction-icons span {
+    margin-left: 10px;
+    font-size: 0.875rem;
+    color: #999;
+}
+
+
+
+
+/* Media Queries for Smaller Screens */
+@media only screen and (max-width: 1024px){
+    .custom-card {
+        height: 89%;
+    }
+
+    .embed-responsive-item {
+        height: 100%;
+    }
+} 
+
+@media only screen and (max-width: 820px)
+{
+    .card-title {
+        font-size: 19px;
+        margin-top: 10px;
+        color: #111;
+    }
+}
+
+@media (max-width: 768px){
+
+    .card-title {
+        font-size: 19px;
+        margin-top: 10px;
+        color: #111;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .custom-card {
+        flex-direction: column;
+    }
+
+    .embed-responsive-item {
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .itunes-btn {
+        margin-bottom: 10px;
+    }
+
+    .composition-title {
+        font-size: 1.5rem;
+    }
+
+    .composition-subtitle {
+        font-size: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .custom-card {
+        height: 93%;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+}

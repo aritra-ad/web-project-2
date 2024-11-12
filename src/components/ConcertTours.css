@@ -1,0 +1,137 @@
+/* General container setup */
+.concert-tours-page {
+    color: #fff;
+}
+
+/* Section 1: Concert Tours Header */
+.concert-tours-header {
+    padding: 100px 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.concert-tours-title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6ac2c6;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.concert-tours-title::before,
+.concert-tours-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: #6ac2c6;
+}
+
+.concert-tours-title::before {
+    left: -120px;
+    width: 100px;
+}
+
+.concert-tours-title::after {
+    right: -120px;
+    width: 100px;
+}
+
+.concert-tours-description {
+    font-size: 1.2rem;
+    color: #8b8585;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section 2: Tour Details */
+.tour-details-section {
+    background-image: url('../assets/concert_bg.jpg'); /* Replace with actual image path */
+    padding: 100px 0;
+    position: relative;
+    color: #000000;
+}
+
+.tour-details {
+    text-align: left;
+}
+
+.tour-date-info {
+    margin-bottom: 20px;
+}
+
+.tour-date {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.tour-title {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.tour-date-range {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tour-description {
+    max-width: 500px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.buy-button {
+    padding: 10px 25px;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover Animation */
+.buy-button:hover {
+    background-color: #6ac2c6; /* Change to your desired hover color */
+    transform: scale(1.05); /* Scale up the button slightly */
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .concert-tours-title {
+        font-size: 2.2rem;
+    }
+
+    .tour-title {
+        font-size: 1.5rem;
+    }
+
+    .tour-date-range {
+        font-size: 1.5rem;
+    }
+
+    .tour-description {
+        font-size: 1rem;
+    }
+
+    .buy-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .concert-tours-title {
+        font-size: 22px;
+    }
+    .concert-tours-description {
+        font-size: 16px;
+        padding: 0 25px 0 25px;
+    }
+}
+

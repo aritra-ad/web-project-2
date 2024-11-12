@@ -1,0 +1,183 @@
+.event-list-container {
+  display: flex;
+  height: 81vh;
+}
+
+.image-side {
+  background-image: url('../assets/Upcming_bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-side {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upcoming-events-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  color: #4b6379;
+}
+
+.event {
+  margin-bottom: 10px;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+.event-location {
+  font-size: 1rem;
+  color: #666;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #333;
+  padding: 0 485px 0 0;
+}
+
+.divider {
+  width: 2px;
+  height: 76px;
+  background: #333;
+  margin: 14px 0;
+  position: relative;
+  left: 25px;
+}
+
+@media (max-width:1280px){
+
+  .event-list-container {
+      height: 100%
+  }
+  .event-description {
+   padding: 0 0px 0 0; 
+   font-size: 17px;
+  }
+  
+  .upcoming-events-title {
+    font-size: 25px;
+  }
+  
+  .event-title {
+    font-size: 22px;
+  }
+  
+  .event-location {
+    font-size: 17px;
+  }
+  
+  }
+
+@media (max-width:1024px){
+
+  .event-list-container {
+      height: 100%
+  }
+  .event-description {
+   padding: 0 0px 0 0; 
+   font-size: 17px;
+  }
+  
+  .upcoming-events-title {
+    font-size: 25px;
+  }
+  
+  .event-title {
+    font-size: 22px;
+  }
+  
+  .event-location {
+    font-size: 17px;
+  }
+  
+  }
+
+@media (max-width:820px){
+
+  .event-list-container {
+      height: 100%
+  }
+  .event-description {
+   padding: 0 0px 0 0; 
+   font-size: 15px;
+  }
+  
+  .upcoming-events-title {
+    font-size: 25px;
+  }
+  
+  .event-title {
+    font-size: 20px;
+  }
+  
+  .event-location {
+    font-size: 16px;
+  }
+  
+  }
+
+@media (max-width:768px){
+
+  .event-list-container {
+      height: 100%
+  }
+  .event-description {
+   padding: 0 0px 0 0; 
+   font-size: 15px;
+  }
+  
+  .upcoming-events-title {
+    font-size: 25px;
+  }
+  
+  .event-title {
+    font-size: 20px;
+  }
+  
+  .event-location {
+    font-size: 16px;
+  }
+  
+  }
+
+@media (max-width:767px){
+
+.event-list-container {
+    height: 100%
+}
+.event-description {
+ padding: 0 0px 0 0; 
+ font-size: 15px;
+}
+
+.upcoming-events-title {
+  font-size: 25px;
+}
+
+.event-title {
+  font-size: 20px;
+}
+
+.event-location {
+  font-size: 16px;
+}
+
+}

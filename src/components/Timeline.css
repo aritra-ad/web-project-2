@@ -1,0 +1,121 @@
+/* Container for the timeline */
+.timeline {
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Each timeline item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px; /* Add space between timeline items */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start with a slight offset */
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Year section with bottom border */
+.timeline .timeline-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px; /* Space before the bottom border */
+}
+
+/* Custom bottom border for year */
+.year-border {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-year span {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+/* Right-side timeline details */
+.timeline-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.timeline-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Image and play button */
+.timeline-image {
+    position: relative;
+    margin-top: 15px;
+}
+
+.timeline-image img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Button hover effect */
+.play-button {
+    padding: 11px 58px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.play-button:hover {
+    background-color: #000;
+    color: #fff;
+    width: 150px;
+}
+
+/* Responsive design using Bootstrap's grid system and classes */
+@media (max-width: 768px) {
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+    .timeline-year {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px){
+
+    .timeline-details h3 {
+        font-size: 18px;
+
+    }
+    
+    .timeline-details p {
+        font-size: 14px;
+
+    }
+
+    .timeline .timeline-year {
+        font-size: 18px;
+    }
+
+    .timeline .timeline-year h3 {
+        font-size: 22px;
+    }
+}
